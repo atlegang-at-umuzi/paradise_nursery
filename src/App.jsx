@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import Header from './components/Header';
 import Landing from './components/Landing';
@@ -8,7 +7,7 @@ import './styles/App.css';
 
 const App = ({ currentPage }) => {
   return (
-    <div className="min-h-screen">
+    <div>
       {currentPage === 'landing' && <Landing />}
       
       {currentPage !== 'landing' && <Header />}
